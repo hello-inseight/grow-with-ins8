@@ -18,20 +18,7 @@ footer {
     color: #fff;
     padding: 20px 0;
 }
-.element-circle {
-    width: 150px;
-    height: 150px;
-    margin: 20px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-    font-size: 0.9em;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    position: absolute;
-}
+
 .bg-yellow {
     background-color: #f5c71a;
 }
@@ -43,35 +30,6 @@ footer {
 }
 .bg-red {
     background-color: #f44336;
-}
-.circle-container {
-    position: relative;
-    width: 400px;
-    height: 400px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.circle-container .element-circle:nth-child(1) {
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.circle-container .element-circle:nth-child(2) {
-    top: 50%;
-    right: 0;
-    transform: translate(50%, -50%);
-}
-.circle-container .element-circle:nth-child(3) {
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 50%);
-}
-.circle-container .element-circle:nth-child(4) {
-    top: 50%;
-    left: 0;
-    transform: translate(-50%, -50%);
 }
 
 .lead {
@@ -103,3 +61,25 @@ footer {
     from { border-color: transparent; }
     to { border-color: orange; }
 }
+
+.position-relative {
+    position: relative;
+}
+
+.vertical-line {
+    /* position: absolute; */
+    height: 3vw; /* Adjust this height to match the space between the two images */
+    border-left: 2px dashed #3b82f6; /* Set the color of the line */
+    width: 0;
+    left: 50%; /* Center the line between the two images */
+}
+
+.vertical-hide {
+    /* position: absolute; */
+    height: 4.2vw; /* Adjust this height to match the space between the two images */
+    width: 0;
+    left: 50%; /* Center the line between the two images */
+}
+
+
+
